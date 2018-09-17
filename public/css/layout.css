@@ -52,7 +52,8 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   margin-top: -150px;
+   padding-bottom: 30px;
    text-align: center;
 }
 
