@@ -756,6 +756,7 @@ properly.
 @media only screen and (max-width: 460px) {
 
    .row { width: auto; }
+   body {margin-top: 50px;}
 
 }
 
