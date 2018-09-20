@@ -12,6 +12,7 @@ class Contact extends Component {
       var phone= this.props.data.phone;
       var email = this.props.data.email;
       var message = this.props.data.contactmessage;
+      var linkedin = 'https://www.linkedin.com/in/beratson/'
     }
 
     return (
@@ -31,9 +32,18 @@ class Contact extends Component {
 
             </div>
 
+            <div className="ten columns">
+
+              <span className="lead"><a href={`mailto:${email}`}> {email}  </a> </span>
+            </div>
+            <div className="ten columns">
+
+              <span className="lead"><a href={linkedin}> Find me on Linkedin  </a> </span>
+            </div>
+
          </div>
 
-         <div className="row">
+         {/* <div className="row">
             <div className="eight columns">
 
                <form action="" method="post" id="contactForm" name="contactForm">
@@ -85,9 +95,9 @@ class Contact extends Component {
 						   {city}, {state} {zip}<br />
 						   <span>{phone}</span>
 					   </p>
-				   </div>
+				   </div> */}
 
-               <div className="widget widget_tweets">
+               {/* <div className="widget widget_tweets">
                   <h4 className="widget-title">Latest Tweets</h4>
                   <ul id="twitter">
                      <li>
@@ -107,9 +117,9 @@ class Contact extends Component {
                         <b><a href="#">3 Days Ago</a></b>
                      </li>
                   </ul>
-		         </div>
-            </aside>
-      </div>
+		         </div> */}
+            {/* </aside> */}
+      {/* </div> */}
    </section>
     );
   }
