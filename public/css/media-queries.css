@@ -191,7 +191,7 @@
       padding-bottom: 12px;
       padding-top: 6px;
    }
-   header .banner-text h1 { font: 68px/1.1em 'opensans-bold', sans-serif; }
+   header .banner-text h1 { font: 50px/1.1em 'opensans-bold', sans-serif !important; }
    header .banner-text h3 {
       font: 16px/1.9em 'librebaskerville-regular', serif;
       width: 85%;
@@ -212,7 +212,13 @@
     /* scrolldown link */
    header .scrolldown { display: none; }
 
+   header .responsive-headline{
+     /* font-size: 50px; */
+   }
 
+   #home {
+     height : 750px !important
+   }
    /* About Section
    -------------------------------------------------------------------- */
    #about .profile-pic { display: none; }
