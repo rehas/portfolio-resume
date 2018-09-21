@@ -114,6 +114,10 @@
 
     var mobileMenuItems = ['Resume', 'Home', 'About', 'Contact' ];
 
+    $("body").on('touchmove', function(e){
+        return
+    })
+
     $("body").on('touchend', function(e){
         if(e.target.className === 'mobile-btn' && document.location.hash==='#nav-wrap' ){
             return
