@@ -112,21 +112,26 @@
 
     });
 
-    var mobileMenuItems = ['Resume', 'Home', 'About', 'Contact' ];
+    // var mobileMenuItems = ['Resume', 'Home', 'About', 'Contact' ];
 
-    $("body").on('touchmove', function(e){
-        return
-    })
+    // $("body").on('gotpointercapture' , function(e){
+    //     if(e.target.className === 'mobile-btn' && document.location.hash==='#nav-wrap' ){
+    //         return false
+    //     }
+    //     if(e.target.className === 'mobile-btn'){
+    //         return false
+    //     }
+    //     if(mobileMenuItems.indexOf( e.target.innerHTML) > -1){
+    //         return false
+    //     }
 
-    $("body").on('touchend', function(e){
-        if(e.target.className === 'mobile-btn' && document.location.hash==='#nav-wrap' ){
-            return
-        }
-        if(mobileMenuItems.indexOf( e.target.innerHTML) > -1){
-            return
-        }
-        document.location = document.location.hash = '#home';
-    })
+    //     if($('#nav-wrap').css('display') === 'block'){
+    //         $('#nav-wrap').css('display', 'none');
+    //         $('#nav-wrap').removeClass('opaque');
+    //     }
+    // })
+
+    
 
     $(document).on('click', '.popup-modal-dismiss', function (e) {
             e.preventDefault();
