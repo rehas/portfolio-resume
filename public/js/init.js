@@ -112,8 +112,21 @@
 
     });
 
+    var mobileMenuItems = ['Resume', 'Home', 'About', 'Contact' ];
+
+    $("body").on('touchend', function(e){
+        if(e.target.className === 'mobile-btn' && document.location.hash==='#nav-wrap' ){
+            return
+        }
+        if(mobileMenuItems.indexOf( e.target.innerHTML) > -1){
+            return
+        }
+        document.location = document.location.hash = '#home';
+    })
+
     $(document).on('click', '.popup-modal-dismiss', function (e) {
-    		e.preventDefault();
+            e.preventDefault();
+            console.log("Im clicked");
     		$.magnificPopup.close();
     });
 
