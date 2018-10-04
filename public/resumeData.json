@@ -59,7 +59,7 @@
     "skillmessage":"Here's a brief overview of the select skills",
     "education":[
       {
-        "school":"Codaisseur Academy 3 Months",
+        "school":"Codaisseur Academy - 3 Months",
         "degree":"Full Stack Developer",
         "graduated":"September 2018",
         "description":"Web development with React, TypeScript, Express/Koa, TypeORM, Postgres"
@@ -71,7 +71,7 @@
         "description":"Web development with KnocoutJS, BackBoneJS, Pyhton, MongoDB"
       },
       {
-        "school":"FreeCodeCamp 6 Months",
+        "school":"FreeCodeCamp - 6 Months",
         "degree":"Front End Developer",
         "graduated":"2017",
         "description":"Web development with Express, Angular, MySQL"
