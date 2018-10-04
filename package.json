@@ -2,10 +2,13 @@
   "name": "personalportfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://www.brsonmez.com",
   "dependencies": {
     "jquery": "^3.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.0.17"
   },
   "scripts": {

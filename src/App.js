@@ -7,6 +7,7 @@ import Footer from './Components/Footer';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Contact from './Components/Contact';
+import {Route} from 'react-router-dom';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 
@@ -18,9 +19,6 @@ class App extends Component {
       foo: 'bar',
       resumeData: {}
     };
-
-    // ReactGA.initialize('UA-110570651-1');
-    // ReactGA.pageview(window.location.pathname);
 
   }
 
@@ -43,17 +41,42 @@ class App extends Component {
     this.getResumeData();
   }
 
-  render() {
-    return (
-      <div className="App">
-        <Header data={this.state.resumeData.main}/>
+  menuClose = (e)=>{
+    if(this.props.location.hash.indexOf('nav-wrap') === -1) {
+      return
+    }else{
+      document.getElementsByClassName('mobile-btn')[1].click();
+    }
+  }
+
+  renderEverythingBelowHeader(flag){
+    console.log(`flag is ${flag}`)
+    if(flag){
+      return (<div>
+        <Header data={this.state.resumeData.main} fullRender={flag}/>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
         {/* <Portfolio data={this.state.resumeData.portfolio}/> */}
         {/* <Testimonials data={this.state.resumeData.testimonials}/> */}
         <Contact data={this.state.resumeData.main}/>
         <Footer data={this.state.resumeData.main}/>
-      </div>
+        </div>
+      )
+    }else{
+      return (
+          <div></div>
+        )
+    }
+  }
+
+  render() {
+    const renderRest = this.props.location.pathname.indexOf('infographic') === -1;
+    console.log(`renderRest id ${renderRest}`)
+    return (
+          
+            <div className="App" onClick={this.menuClose}>
+              {this.renderEverythingBelowHeader(renderRest)}
+            </div>
     );
   }
 }
