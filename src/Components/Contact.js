@@ -34,11 +34,11 @@ class Contact extends Component {
 
             <div className="ten columns">
 
-              <span className="lead"><a href={`mailto:${email}`}> {email}  </a> </span>
+              <span className="lead"><a href={`mailto:${email}`}> <i className={"fa fa-mail-reply"}></i> - {email}  </a> </span>
             </div>
             <div className="ten columns">
 
-              <span className="lead"><a href={linkedin}> Find me on Linkedin  </a> </span>
+              <span className="lead"><a href={linkedin}> <i className={"fa fa-linkedin"}></i> - Find me on Linkedin  </a> </span>
             </div>
 
          </div>
