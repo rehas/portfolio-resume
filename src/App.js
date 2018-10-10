@@ -51,7 +51,7 @@ class App extends Component {
 
   renderEverythingBelowHeader(flag){
     console.log(`flag is ${flag}`)
-    if(flag){
+    if(flag === 'rest'){
       return (<div>
         <Header data={this.state.resumeData.main} fullRender={flag}/>
         <About data={this.state.resumeData.main}/>
@@ -62,20 +62,32 @@ class App extends Component {
         <Footer data={this.state.resumeData.main}/>
         </div>
       )
-    }else{
+    }else if(flag === 'infographic'){
       return (
           <div></div>
         )
+    } else if(flag = 'portfolio'){
+      return (
+        <Portfolio data={this.state.resumeData.portfolio}/>
+      )
     }
   }
 
   render() {
-    const renderRest = this.props.location.pathname.indexOf('infographic') === -1;
-    console.log(`renderRest id ${renderRest}`)
+    let render;
+    
+    if (this.props.location.pathname.indexOf('infographic') !== -1){
+      render =  'infographic';
+    }else if(this.props.location.pathname.indexOf('portfolio') !== -1 ){
+      render = 'portfolio'
+    } else{
+      render = 'rest'
+    }
+    console.log(`renderRest id ${render}`)
     return (
           
             <div className="App" onClick={this.menuClose}>
-              {this.renderEverythingBelowHeader(renderRest)}
+              {this.renderEverythingBelowHeader(render)}
             </div>
     );
   }

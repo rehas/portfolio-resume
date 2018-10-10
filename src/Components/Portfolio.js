@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 
 class Portfolio extends Component {
   render() {
+    
 
     if(this.props.data){
       var projects = this.props.data.projects.map(function(projects){
@@ -27,12 +30,20 @@ class Portfolio extends Component {
       <section id="portfolio">
 
       <div className="row">
+      <nav id="nav-wrap">
+          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+  	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
+         <ul id="nav" className="nav">
+            <li> <Link to={"/#home"}>Home</Link></li>
+         </ul>
+
+      </nav>
 
          <div className="twelve columns collapsed">
 
             <h1>Check Out Some of My Works.</h1>
 
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+            <div id="portfolio-wrapper" className="bgrid-halfs s-bgrid-thirds cf">
                 {projects}
             </div>
           </div>
