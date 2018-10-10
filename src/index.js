@@ -6,7 +6,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import Infographic from './Components/Infographic'
-import Portfolio from './Components/Portfolio'
+// import Portfolio from './Components/Portfolio'
 
 
 ReactDOM.render(

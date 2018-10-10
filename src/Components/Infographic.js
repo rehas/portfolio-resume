@@ -24,7 +24,7 @@ class Infographic extends Component {
       </nav>
 
          <div className="twelve columns collapsed infographic" style={{marginTop: '5px'}} onClick={this.clickHandler}>
-            <img src={require("../images/infographicCV.jpg")} />
+            <img src={require("../images/infographicCV.jpg")} alt={"infographic-cv"} />
           </div>
       </div>
     );

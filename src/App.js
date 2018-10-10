@@ -7,8 +7,8 @@ import Footer from './Components/Footer';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Contact from './Components/Contact';
-import {Route} from 'react-router-dom';
-import Testimonials from './Components/Testimonials';
+// import {Route} from 'react-router-dom';
+// import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 
 class App extends Component {
@@ -50,7 +50,7 @@ class App extends Component {
   }
 
   renderEverythingBelowHeader(flag){
-    console.log(`flag is ${flag}`)
+    // console.log(`flag is ${flag}`)
     if(flag === 'rest'){
       return (<div>
         <Header data={this.state.resumeData.main} fullRender={flag}/>
@@ -66,7 +66,7 @@ class App extends Component {
       return (
           <div></div>
         )
-    } else if(flag = 'portfolio'){
+    } else if(flag === 'portfolio'){
       return (
         <Portfolio data={this.state.resumeData.portfolio}/>
       )
@@ -83,7 +83,6 @@ class App extends Component {
     } else{
       render = 'rest'
     }
-    console.log(`renderRest id ${render}`)
     return (
           
             <div className="App" onClick={this.menuClose}>
