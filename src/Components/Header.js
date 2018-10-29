@@ -12,7 +12,7 @@ class Header extends Component {
       var city= this.props.data.address.city;
       var shouldbeAn = ['a', 'e', 'i', 'o', 'u'].includes(this.props.data.address.city[0].toLowerCase());
       var networks= this.props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
+        return <li key={network.name}><a target='#' href={network.url}><i className={network.className}></i></a></li>
       })
     }
 
