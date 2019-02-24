@@ -94,9 +94,15 @@
     ],
     "work":[
       {
+        "company":"Vixion BV",
+        "title":"Full Stack Developer",
+        "years":"December 2018 - Present",
+        "description":"Worked on an automated inconsistency detection tool for salary calculations for pension fund administrations, P-Control. Designed and developed new features to expand functionality without performance loss. Refined automated UI and integration tests to catch potential bugs early on. Streamlined CI-CD processes including tests with TFS to automate tests through build and release. Optimized user input validations by analyzing requirements and tuning existing solutions. As a side project, contributed to a talent evaluation tool project for curating potential developers."
+      },
+      {
         "company":"Drive Society",
         "title":"Full Stack Developer",
-        "years":"August 2018 - September 2018",
+        "years":"August 2018 - February 2019",
         "description":"Worked as a Full Stack Developer on the MVP for a launching product in a team of 8 developers as part of the Codaisseur Academy. Focused on integration of client / business and admin apps. Worked on deployment and code reviews. Project used typescript-typeOrm / koa backend and React frontend with postgres. A working MVP (including 4 different integrated apps) has been delivered by the end of two weeks."
       },
       {
@@ -129,6 +135,18 @@
       },
       {
         "name":"Postgres",
+        "level":"70%"
+      },
+      {
+        "name":"ASP.NET MVC",
+        "level":"80%"
+      },
+      {
+        "name":"Selenium C#",
+        "level":"75%"
+      },
+      {
+        "name":"TFS",
         "level":"70%"
       },
       {
